@@ -94,9 +94,9 @@
               <span class="bg-cyan-700/50 text-cyan-100 px-2 py-1 rounded-full font-roboto-mono text-xs backdrop-blur-sm shadow-sm">Hands-on</span>
             </div>
             <div class="mb-3 text-sm text-gray-400 font-roboto-mono flex items-center gap-2">
-              Mentor:
+              Mentors:
               <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="" class="w-7 h-7 rounded-full border-2 border-cyan-300 object-cover">
-              <span class="text-neutral-200">Somsubhra</span>
+              <span class="text-neutral-200">Somsubhra, Sayan</span>
             </div>
           </div>
           <a href="pylearn" class="mt-3 py-2 px-4 rounded-xl bg-gradient-to-r from-emerald-400 to-cyan-500 text-slate-900 font-bold shadow-md hover:scale-105 transition">View ⟶</a>
@@ -296,6 +296,52 @@ window.addEventListener('DOMContentLoaded', () => showSessions('upcoming'));
     easing: 'ease-in-out',
     once: true
   });
+</script>
+  <!-- Modal Backdrop -->
+<div id="edition-modal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden justify-center items-center px-4">
+  <div class="bg-slate-900 border border-cyan-700 rounded-2xl shadow-xl max-w-md w-full p-6 text-center animate-fadeIn">
+    <h2 class="text-2xl font-orbitron text-cyan-300 mb-2">Welcome to DATA 101</h2>
+    <p class="text-gray-200 font-roboto-mono mb-6">
+      The 2025 edition is now live with new challenges and sessions.
+    </p>
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <a href="https://mlig-iitmbs.github.io/ai4all" 
+         class="px-6 py-2 bg-gradient-to-r from-emerald-400 to-cyan-500 text-slate-900 font-bold rounded-xl shadow-md hover:scale-105 transition">
+        Go to 2025 Edition ⟶
+      </a>
+      <button onclick="closeModal()" 
+              class="px-6 py-2 bg-slate-800 text-cyan-300 rounded-xl border border-cyan-600 hover:bg-slate-700 transition font-roboto-mono">
+        Not Now
+      </button>
+    </div>
+  </div>
+</div>
+
+<style>
+@keyframes fadeIn {
+  from {opacity: 0; transform: scale(0.95);}
+  to {opacity: 1; transform: scale(1);}
+}
+.animate-fadeIn {
+  animation: fadeIn 0.4s ease-out;
+}
+</style>
+
+<script>
+  const modal = document.getElementById('edition-modal');
+
+  // Show modal after short delay
+  window.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }, 600);
+  });
+
+  function closeModal() {
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  }
 </script>
 </body>
 </html>
