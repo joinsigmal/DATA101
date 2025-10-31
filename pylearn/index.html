@@ -8,135 +8,146 @@
   <meta name="keywords" content="ai,ml,nlp,data challenge,wayanad house,iitmbs,online,logicloom,ml series">
   <link href="https://mlig-iitmbs.github.io/favicon.ico" rel="icon">
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto+Mono:wght@600&family=Inter:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto+Mono:wght@600&family=Inter:wght@600&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Inter', 'Roboto Mono', 'Orbitron', sans-serif; }
+    body { font-family: 'Inter', 'Roboto Mono', sans-serif; }
     .font-orbitron { font-family: 'Orbitron', 'Inter', sans-serif; }
-    .font-roboto-mono { font-family: 'Roboto Mono', 'Inter', monospace; }
+    .font-roboto-mono { font-family: 'Roboto Mono', monospace; }
   </style>
 </head>
-<body class="bg-gradient-to-br from-sky-950 via-slate-900 to-blue-900 min-h-screen text-white">
-  <!-- Header Section -->
-  <header class="relative">
+<body class="bg-gradient-to-br from-sky-950 via-slate-900 to-blue-900 text-white min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="relative mb-20">
     <img src="https://images.unsplash.com/photo-1649180556628-9ba704115795?q=80&w=1200&auto=format&fit=crop"
-         alt="Module Header" class="w-full h-72 md:h-96 object-cover brightness-75 rounded-b-3xl shadow-lg"/>
-    <div class="absolute inset-0 flex flex-col items-center justify-center text-center">
-      <h1 class="text-4xl md:text-6xl font-orbitron font-bold bg-gradient-to-r from-cyan-400 to-emerald-300 text-transparent bg-clip-text mb-3 drop-shadow-2xl">Pythonic Sprint</h1>
-      <p class="text-lg md:text-2xl font-roboto-mono text-gray-200 drop-shadow-xl">Kickstart your data science journey with Python programming!</p>
+         alt="Pythonic Sprint Banner" class="w-full h-80 md:h-96 object-cover brightness-75 rounded-b-3xl shadow-2xl">
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+      <h1 class="text-5xl md:text-6xl font-orbitron bg-gradient-to-r from-cyan-400 to-emerald-300 bg-clip-text text-transparent drop-shadow-2xl mb-3">Pythonic Sprint</h1>
+      <p class="text-xl md:text-2xl font-roboto-mono text-gray-200 drop-shadow-lg">Kickstart your data science journey with Python programming!</p>
     </div>
   </header>
 
-  <main class="max-w-4xl mx-auto px-6 py-16">
-    <!-- Module Essentials Card -->
-    <section class="bg-slate-900 bg-opacity-80 rounded-2xl shadow-lg border border-cyan-700 p-8 flex flex-col gap-6 md:flex-row md:items-center md:gap-10 mb-12 -mt-36 relative z-10">
+  <main class="max-w-5xl mx-auto px-6 flex-1">
+
+    <!-- Module Info -->
+    <section class="bg-slate-900/90 rounded-2xl shadow-xl border border-cyan-700 p-8 flex flex-col md:flex-row justify-between items-start gap-10 -mt-40 relative z-10 mb-20">
       <div class="flex-1 space-y-4">
         <div>
-          <span class="block uppercase text-xs text-cyan-400 font-bold tracking-widest font-roboto-mono mb-1">Target Audience</span>
+          <span class="block text-xs uppercase tracking-widest text-cyan-400 font-bold font-roboto-mono mb-1">Target Audience</span>
           <p class="font-roboto-mono text-xl text-emerald-200">Beginners, 24-batch students</p>
         </div>
         <div>
-          <span class="block uppercase text-xs text-cyan-400 font-bold tracking-widest font-roboto-mono mb-1">Prerequisites</span>
+          <span class="block text-xs uppercase tracking-widest text-cyan-400 font-bold font-roboto-mono mb-1">Prerequisites</span>
           <p class="font-roboto-mono text-lg">None! Just curiosity.</p>
         </div>
         <div>
-          <span class="block uppercase text-xs text-cyan-400 font-bold tracking-widest font-roboto-mono mb-1">Mode</span>
+          <span class="block text-xs uppercase tracking-widest text-cyan-400 font-bold font-roboto-mono mb-1">Mode</span>
           <p class="font-roboto-mono text-lg">Online (Via GMeet and our event portal)</p>
         </div>
       </div>
-      <div class="flex flex-col justify-between items-center gap-6 mt-8 md:mt-0">
-        <a href="#" class="px-7 py-3 bg-gradient-to-r from-emerald-400 to-cyan-500 rounded-xl text-slate-900 font-orbitron font-bold text-lg uppercase shadow-md hover:scale-105 transition tracking-wider">Registration closed!</a>
-        <!-- Schedule Badge -->
-        <div class="bg-cyan-900 bg-opacity-80 px-4 py-2 rounded-full font-roboto-mono text-cyan-200 shadow">
-          <svg viewBox="0 0 20 20" fill="currentColor" class="inline w-5 h-5 mr-1 mb-1 text-emerald-400"><path d="M6 2v2H5a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V6a2 2 0 00-2-2h-1V2h-2v2H8V2H6zm9 6v8a1 1 0 01-1 1H6a1 1 0 01-1-1V8h10zm-5 2a2 2 0 100 4 2 2 0 000-4z"/></svg>
+
+      <div class="flex flex-col items-center gap-5 self-center md:self-start">
+        <a href="#" class="px-8 py-3 bg-gradient-to-r from-emerald-400 to-cyan-500 text-slate-900 uppercase font-orbitron font-bold rounded-xl text-lg tracking-wider shadow-md hover:scale-105 transition">Registration closed!</a>
+        <div class="bg-cyan-900/80 px-5 py-2 rounded-full shadow font-roboto-mono text-cyan-200 flex items-center gap-2">
+          <svg viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 text-emerald-400">
+            <path d="M6 2v2H5a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V6a2 2 0 00-2-2h-1V2h-2v2H8V2H6zm9 6v8a1 1 0 01-1 1H6a1 1 0 01-1-1V8h10zm-5 2a2 2 0 100 4 2 2 0 000-4z"/>
+          </svg>
           <span>01 - 15 Oct, 2024</span>
         </div>
       </div>
     </section>
 
-    <!-- Topics Covered -->
+    <!-- Topics -->
     <section class="mb-12">
-      <h2 class="text-2xl font-orbitron text-cyan-400 mb-3 tracking-wide">Topics Covered</h2>
-      <ul class="list-disc pl-7 space-y-2 text-gray-200 leading-relaxed font-roboto-mono">
+      <h2 class="text-2xl font-orbitron text-cyan-400 mb-3">Topics Covered</h2>
+      <ul class="list-disc pl-6 text-gray-200 font-roboto-mono space-y-2">
         <li>Introduction to Python Basics: Understanding variables, data types, and basic syntax.</li>
         <li>Using Google Colab</li>
-        <li>Control Flow and Functions: Using conditional statements and loops; functions, handling user input</li>
-        <li>Introduction to Image Processing: Handling images in Python, Pillow (PIL) library for basic image manipulation, working with libraries to automate processes that are otherwise time-consuming.</li>
-        <li>Practical applications: Mini Python projects</li>
+        <li>Control Flow and Functions: Using conditional statements and loops; functions, handling user input.</li>
+        <li>Introduction to Image Processing: Handling images in Python using Pillow (PIL), automating image-related tasks.</li>
+        <li>Practical applications: Mini Python projects.</li>
       </ul>
     </section>
 
     <!-- Learning Outcomes -->
     <section class="mb-12">
-      <h2 class="text-2xl font-orbitron text-cyan-400 mb-3 tracking-wide">Learning Outcomes</h2>
-      <ul class="list-disc pl-7 space-y-2 text-gray-200 font-roboto-mono">
-        <li>You will gain a strong foundation in Python basics, image processing and a bit of command-line applications.</li>
-        <li>By the end of the event, you'll be comfortable using the common Python libraries.</li>
+      <h2 class="text-2xl font-orbitron text-cyan-400 mb-3">Learning Outcomes</h2>
+      <ul class="list-disc pl-6 text-gray-200 font-roboto-mono space-y-2">
+        <li>Gain a strong foundation in Python basics, image processing, and command-line applications.</li>
+        <li>Become comfortable using common Python libraries.</li>
       </ul>
     </section>
 
-    <!-- Schedule Section -->
+    <!-- Schedule -->
     <section class="mb-12">
-      <h2 class="text-2xl font-orbitron text-cyan-400 mb-3 tracking-wide">Schedule</h2>
-      <p class="text-gray-200 font-orbitron mb-2">All materials will be released on our event portal. Based on the contents, we will release 3 reflection quizzes and 2 hands-on tasks. Check the portal and our discussion group for updates. We may not send individual reminders via mail.</p>
-      <div class="rounded-xl border border-cyan-700 overflow-hidden shadow divide-y divide-slate-800 font-roboto-mono">
-        <div class="flex items-center justify-between px-5 py-3 bg-slate-800">
-          <span class="text-cyan-200 font-semibold">Task 1</span>
-          <span class="text-gray-300">Release: 2nd Oct</span>
-          <span class="text-cyan-200">Due 6th Oct</span>
-        </div>
-        <div class="flex items-center justify-between px-5 py-3 bg-slate-900">
-          <span class="text-cyan-200 font-semibold">Task 2</span>
-          <span class="text-gray-300">Release: 4th Oct</span>
-          <span class="text-cyan-200">Due 7th Oct</span>
-        </div>
-         <div class="flex items-center justify-between px-5 py-3 bg-slate-900">
-          <span class="text-cyan-200 font-semibold">Task 3</span>
-          <span class="text-gray-300">Release: 5th Oct</span>
-          <span class="text-cyan-200">Due 10th Oct</span>
-        </div>
-         <div class="flex items-center justify-between px-5 py-3 bg-slate-900">
-          <span class="text-cyan-200 font-semibold">Hands-on Tasks</span>
-          <span class="text-gray-300">Release: 12th Oct</span>
-          <span class="text-cyan-200">Due 15th Oct</span>
-        </div>
+      <h2 class="text-2xl font-orbitron text-cyan-400 mb-3">Schedule</h2>
+      <p class="text-gray-200 font-orbitron mb-4">All materials will be released on our event portal. We will release three reflection quizzes and two hands-on tasks. Check the portal and discussion group for updates; individual reminders will not be sent.</p>
+      <div class="rounded-xl overflow-hidden border border-cyan-700 shadow-lg">
+        <table class="w-full font-roboto-mono text-gray-200 text-sm md:text-base">
+          <thead class="bg-slate-800 text-cyan-300">
+            <tr>
+              <th class="py-3 px-4 text-left">Activity</th>
+              <th class="py-3 px-4">Release</th>
+              <th class="py-3 px-4">Due Date</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-800 bg-slate-900/80">
+            <tr>
+              <td class="py-3 px-4 text-cyan-200">Task 1</td>
+              <td class="py-3 px-4">2nd Oct</td>
+              <td class="py-3 px-4 text-emerald-300">6th Oct</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 text-cyan-200">Task 2</td>
+              <td class="py-3 px-4">4th Oct</td>
+              <td class="py-3 px-4 text-emerald-300">7th Oct</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 text-cyan-200">Task 3</td>
+              <td class="py-3 px-4">5th Oct</td>
+              <td class="py-3 px-4 text-emerald-300">10th Oct</td>
+            </tr>
+            <tr>
+              <td class="py-3 px-4 text-cyan-200">Hands-on Tasks</td>
+              <td class="py-3 px-4">12th Oct</td>
+              <td class="py-3 px-4 text-emerald-300">15th Oct</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
 
-    <!-- Evaluation & Prizes -->
+    <!-- Evaluation -->
     <section class="mb-12">
-      <h2 class="text-2xl font-orbitron text-cyan-400 mb-3 tracking-wide">Evaluation & Prizes</h2>
-      <ul class="list-disc pl-7 text-gray-200 space-y-2 font-roboto-mono">
-        <li>Participation: Submission of atleast 2 out of 5 tasks</li>
-        <li>Appreciation: Completion of first 3 tasks and an overall points ≥ 75%</li>
-        <!--<li>
-          <span class="font-bold text-emerald-300">Prizes:</span>
-          prize details
-        </li>-->
+      <h2 class="text-2xl font-orbitron text-cyan-400 mb-3">Evaluation & Prizes</h2>
+      <ul class="list-disc pl-6 text-gray-200 font-roboto-mono space-y-2">
+        <li>Participation: Submission of at least 2 out of 5 tasks.</li>
+        <li>Appreciation: Completion of first 3 tasks and overall points ≥ 75%.</li>
       </ul>
     </section>
 
-    <!-- Contact Section -->
-    <section class="mb-6">
-      <h2 class="text-2xl font-orbitron text-cyan-400 mb-3 tracking-wide">Contact</h2>
-      <div class="bg-gradient-to-r from-blue-900 via-slate-900 to-cyan-800 rounded-xl p-5 shadow flex flex-col md:flex-row items-start gap-8 font-roboto-mono">
+    <!-- Contact -->
+    <section>
+      <h2 class="text-2xl font-orbitron text-cyan-400 mb-3">Contact</h2>
+      <div class="bg-gradient-to-r from-blue-900 via-slate-900 to-cyan-800 rounded-xl p-6 shadow-md flex flex-col md:flex-row justify-between items-start gap-6 font-roboto-mono">
         <div>
-          <span class="block text-sm mb-1 text-gray-400 uppercase font-bold">Email</span>
+          <span class="block text-xs uppercase text-gray-400 font-bold mb-1">Email</span>
           <a href="mailto:logicloom@ds.study.iitm.ac.in" class="text-cyan-300 hover:underline">logicloom@ds.study.iitm.ac.in</a>
         </div>
         <div>
-          <span class="block text-sm mb-1 text-gray-400 uppercase font-bold">Event Mentor</span>
-          <span class="text-gray-200">Somsubhra</span>
+          <span class="block text-xs uppercase text-gray-400 font-bold mb-1">Event Mentor</span>
+          <span class="text-gray-200">Somsubhra, Sayan</span>
         </div>
         <div>
-          <span class="block text-sm mb-1 text-gray-400 uppercase font-bold">Volunteer</span>
-          <span class="text-gray-200">Rohit Satheesh</span>
+          <span class="block text-xs uppercase text-gray-400 font-bold mb-1">Volunteer</span>
+          <span class="text-gray-200">Rohit</span>
         </div>
       </div>
     </section>
+
   </main>
 
-  <!-- Footer -->
-  <footer class="mb-4 text-slate-400 text-center text-sm font-roboto-mono">
+  <footer class="text-center text-slate-400 text-sm font-roboto-mono py-6">
     © ML Series (LogicLooM) team
   </footer>
 </body>
